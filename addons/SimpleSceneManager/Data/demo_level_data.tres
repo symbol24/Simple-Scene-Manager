@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3 uid="uid://d348asq5ulohp"]
+
+[ext_resource type="Script" path="res://addons/SimpleSceneManager/Code/level_data.gd" id="1_fnt0v"]
+
+[resource]
+script = ExtResource("1_fnt0v")
+levels = Array[String]([])
