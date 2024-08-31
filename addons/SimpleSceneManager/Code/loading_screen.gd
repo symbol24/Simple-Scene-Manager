@@ -29,7 +29,7 @@ func _toggle_loading_screen(_value:bool) -> void:
 		_update_percent(0.0)
 
 func _update_percent(_value:float) -> void:
-	percent.text = "[center]" + str(roundf(_value)) + "%[/center]"
+	percent.text = "[center]" + str(roundf(_value*100)) + "%[/center]"
 
 func _size_check(_last_size:Vector2i) -> Vector2i:
 	if _last_size != DisplayServer.window_get_size():
