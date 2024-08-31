@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs1jiwcykru8v"]
+
+[ext_resource type="Script" path="res://addons/SimpleSceneManager/Code/loading_screen.gd" id="1_e3wos"]
+
+[node name="LoadingScreen" type="Control"]
+visible = false
+z_index = 500
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e3wos")
+metadata/_edit_lock_ = true
+
+[node name="background" type="ColorRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 72)
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 72.0
+color = Color(0.260427, 0.194197, 0.407146, 1)
+metadata/_edit_lock_ = true
+
+[node name="loading" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(195, 55)
+layout_mode = 0
+offset_top = 100.0
+offset_right = 195.0
+offset_bottom = 155.0
+theme_override_font_sizes/normal_font_size = 40
+text = "LOADING"
+
+[node name="percent" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(195, 55)
+layout_mode = 0
+offset_top = 155.0
+offset_right = 195.0
+offset_bottom = 210.0
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]100%[/center]"

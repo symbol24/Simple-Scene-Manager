@@ -11,12 +11,18 @@ config_version=5
 [application]
 
 config/name="Simple Scene Manager"
+run/main_scene="res://addons/SimpleSceneManager/Scenes/Demo/empty.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Manager="*res://addons/SimpleSceneManager/Scenes/scene_manager.tscn"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
 
 [editor_plugins]
 

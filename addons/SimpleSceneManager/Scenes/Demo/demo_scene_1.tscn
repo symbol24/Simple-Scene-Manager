@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgpdjt3tsunvg"]
+
+[ext_resource type="Script" path="res://addons/SimpleSceneManager/Code/Demo/demo_scene.gd" id="1_wsgqc"]
+
+[node name="DemoScene1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wsgqc")
+id = 1
+
+[node name="background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.360595, 0.174221, 0.173743, 1)
+
+[node name="text" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(300, 55)
+layout_mode = 0
+offset_left = 490.0
+offset_top = 195.0
+offset_right = 790.0
+offset_bottom = 250.0
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]SCENE 1[/center]"
+scroll_active = false
+
+[node name="Button" type="Button" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 0
+offset_left = 540.0
+offset_top = 294.0
+offset_right = 740.0
+offset_bottom = 349.0
+theme_override_font_sizes/font_size = 20
+text = "LOAD SCENE 2"

@@ -4,4 +4,7 @@
 
 [resource]
 script = ExtResource("1_fnt0v")
-levels = Array[String]([])
+levels = Array[String](["res://addons/SimpleSceneManager/Scenes/Demo/demo_scene_1.tscn", "res://addons/SimpleSceneManager/Scenes/Demo/demo_scene_2.tscn"])
+load_first_level_on_boot = true
+use_own_loading_screen = false
+loading_delay = 1.0

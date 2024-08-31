@@ -2,6 +2,12 @@ class_name LevelData extends Resource
 
 ## Add the path of the levels in order you wish them to be loaded.
 @export var levels:Array[String] = []
+## If TRUE, loads the first level in the list on boot.
+@export var load_first_level_on_boot:bool = true
+## If TRUE, manager bypass the loading screen present in the plugin. Connect to the Manager.ToggleLoadingScreen signal to display your own.
+@export var use_own_loading_screen:bool = false
+## Additional time added to loading if needed
+@export var loading_delay := 1.0
 
 var current_level:int = -1
 var current_path:String = ""
