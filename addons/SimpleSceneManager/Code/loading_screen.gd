@@ -32,8 +32,8 @@ func _update_percent(_value:float) -> void:
 	percent.text = "[center]" + str(roundf(_value*100)) + "%[/center]"
 
 func _size_check(_last_size:Vector2i) -> Vector2i:
-	if _last_size != DisplayServer.window_get_size():
-		_last_size = DisplayServer.window_get_size()
+	if _last_size != Vector2i(ProjectSettings.get_setting("display/window/size/viewport_width"), ProjectSettings.get_setting("display/window/size/viewport_height")):
+		_last_size = Vector2i(ProjectSettings.get_setting("display/window/size/viewport_width"), ProjectSettings.get_setting("display/window/size/viewport_height"))
 		background.size = _last_size
 		_set_label_positions(_last_size, loading, percent)
 	return _last_size

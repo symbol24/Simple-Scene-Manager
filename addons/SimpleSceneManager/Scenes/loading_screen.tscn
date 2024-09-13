@@ -32,6 +32,7 @@ offset_right = 195.0
 offset_bottom = 155.0
 theme_override_font_sizes/normal_font_size = 40
 text = "LOADING"
+scroll_active = false
 
 [node name="percent" type="RichTextLabel" parent="."]
 unique_name_in_owner = true
@@ -43,3 +44,4 @@ offset_bottom = 210.0
 theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
 text = "[center]100%[/center]"
+scroll_active = false

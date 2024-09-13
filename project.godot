@@ -13,7 +13,7 @@ config_version=5
 config/name="Simple Scene Manager"
 run/main_scene="res://addons/SimpleSceneManager/Scenes/Demo/empty.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://scene_manager_icon.png"
 
 [autoload]
 
@@ -23,6 +23,7 @@ Manager="*res://addons/SimpleSceneManager/Scenes/scene_manager.tscn"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
